@@ -7,7 +7,7 @@
       "command": "cmd",
       "args": [
         "/c",
-        "g++ -std=c++17 -o \"${fileBasenameNoExtension}.exe\" \"${file}\" && \"${fileBasenameNoExtension}.exe\" < input.txt > output.txt && del \"${fileBasenameNoExtension}.exe\""
+        "g++ -std=c++17 -o \"${fileBasenameNoExtension}.exe\" \"${relativeFile}\" && \"${fileBasenameNoExtension}.exe\" < input.txt > output.txt && del \"${fileBasenameNoExtension}.exe\""
       ],
       "group": {
         "kind": "build",
